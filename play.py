@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 from utils import resize_image, XboxController
+from termcolor import cprint
+
 import tensorflow as tf
 import model
-from termcolor import cprint
 import gym
 import gym_mupen64plus
 
@@ -89,4 +90,3 @@ if __name__ == '__main__':
     raw_input('press <ENTER> to quit')
 
     env.close()
-
